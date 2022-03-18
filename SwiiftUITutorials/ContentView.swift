@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+//creating a content view here
 struct ContentView: View {
     
     
@@ -14,7 +14,7 @@ struct ContentView: View {
         SampleVerticalView()
     }
 }
-
+//verfical view similar to Column
 fileprivate func SampleVerticalView() -> some View {
     return VStack{
         Spacer(minLength: 300)
@@ -28,7 +28,7 @@ fileprivate func SampleVerticalView() -> some View {
        
     }
 }
-
+//horizontal view similar to Row
 fileprivate func SampleHorizontalView() -> some View {
     return HStack{
         Text("Hello, world!")
@@ -37,7 +37,7 @@ fileprivate func SampleHorizontalView() -> some View {
             .padding()
     }
 }
-
+//stack view similar to stack
 fileprivate func SampleStackView() -> some View {
     return ZStack(alignment: Alignment.bottom){
         Color.purple
@@ -46,6 +46,7 @@ fileprivate func SampleStackView() -> some View {
     }
 }
 
+//running the view in this function
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
