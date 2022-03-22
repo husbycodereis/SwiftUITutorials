@@ -11,12 +11,14 @@ struct ContentView: View {
     
     
     var body: some View {
-        SampleVerticalView()
+        Group {
+            Text("Hello canim")
+        }
     }
 }
 //verfical view similar to Column
 fileprivate func SampleVerticalView() -> some View {
-    return VStack{
+    return VStack(){
         Spacer(minLength: 300)
         Text("Hello, world!")
             .padding()
@@ -31,18 +33,29 @@ fileprivate func SampleVerticalView() -> some View {
 //horizontal view similar to Row
 fileprivate func SampleHorizontalView() -> some View {
     return HStack{
+     //use helper tab on the right to give values to the views
         Text("Hello, world!")
-            .padding()
+            .font(.title)
+            .fontWeight(.bold)
+            
+            
         Text("Hello, cano!")
-            .padding()
+            .font(.subheadline)
+            .padding(.horizontal, 5.0)
     }
+    .padding(.vertical, 50.0)
 }
 //stack view similar to stack
 fileprivate func SampleStackView() -> some View {
-    return ZStack(alignment: Alignment.bottom){
-        Color.purple
-        Text("Hello, cano!")
-            .padding()
+    return  VStack {
+        Rectangle().frame(width: 100, height: 100, alignment: .center)
+        Spacer(minLength: 40)
+        ZStack(alignment: .bottom){
+            
+            RoundedRectangle(cornerRadius: 30).frame(width: 200, height: 200, alignment: .center)
+            Circle().frame(width: 70, height: 70, alignment: .center) .foregroundColor(Color(red: 1.002, green: 0.478, blue: 0.696))
+        }
+  
     }
 }
 
@@ -52,3 +65,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
