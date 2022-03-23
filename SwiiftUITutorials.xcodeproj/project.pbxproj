@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA0B231627EB55BB0072E989 /* CircleTextImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0B231527EB55BB0072E989 /* CircleTextImageView.swift */; };
+		CA0B231927EB5AF10072E989 /* SampleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0B231827EB5AF00072E989 /* SampleListView.swift */; };
+		CA36C25327EA0A21006A3515 /* SomeTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36C25227EA0A21006A3515 /* SomeTestView.swift */; };
+		CA36C25427EA1170006A3515 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA57A2D227E4BA26003A87D2 /* ContentView.swift */; };
 		CA57A2D127E4BA26003A87D2 /* SwiiftUITutorialsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA57A2D027E4BA26003A87D2 /* SwiiftUITutorialsApp.swift */; };
-		CA57A2D327E4BA26003A87D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA57A2D227E4BA26003A87D2 /* ContentView.swift */; };
 		CA57A2D527E4BA28003A87D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA57A2D427E4BA28003A87D2 /* Assets.xcassets */; };
 		CA57A2D827E4BA28003A87D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA57A2D727E4BA28003A87D2 /* Preview Assets.xcassets */; };
+		CAE9B22927EB511200FE0DAD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CAE9B22827EB511200FE0DAD /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA0B231527EB55BB0072E989 /* CircleTextImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleTextImageView.swift; sourceTree = "<group>"; };
+		CA0B231827EB5AF00072E989 /* SampleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleListView.swift; sourceTree = "<group>"; };
+		CA36C25227EA0A21006A3515 /* SomeTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeTestView.swift; sourceTree = "<group>"; };
 		CA57A2CD27E4BA26003A87D2 /* SwiiftUITutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiiftUITutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA57A2D027E4BA26003A87D2 /* SwiiftUITutorialsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiiftUITutorialsApp.swift; sourceTree = "<group>"; };
 		CA57A2D227E4BA26003A87D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,12 +33,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAE9B22927EB511200FE0DAD /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA0B231727EB5ADC0072E989 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				CA0B231827EB5AF00072E989 /* SampleListView.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
 		CA57A2C427E4BA26003A87D2 = {
 			isa = PBXGroup;
 			children = (
@@ -51,7 +67,10 @@
 		CA57A2CF27E4BA26003A87D2 /* SwiiftUITutorials */ = {
 			isa = PBXGroup;
 			children = (
+				CA0B231727EB5ADC0072E989 /* Features */,
+				CAE9B22A27EB54D200FE0DAD /* View */,
 				CA57A2D027E4BA26003A87D2 /* SwiiftUITutorialsApp.swift */,
+				CA36C25227EA0A21006A3515 /* SomeTestView.swift */,
 				CA57A2D227E4BA26003A87D2 /* ContentView.swift */,
 				CA57A2D427E4BA28003A87D2 /* Assets.xcassets */,
 				CA57A2D627E4BA28003A87D2 /* Preview Content */,
@@ -65,6 +84,22 @@
 				CA57A2D727E4BA28003A87D2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CAE9B22A27EB54D200FE0DAD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CAE9B22B27EB54DE00FE0DAD /* Circle */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CAE9B22B27EB54DE00FE0DAD /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				CA0B231527EB55BB0072E989 /* CircleTextImageView.swift */,
+			);
+			path = Circle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +118,9 @@
 			dependencies = (
 			);
 			name = SwiiftUITutorials;
+			packageProductDependencies = (
+				CAE9B22827EB511200FE0DAD /* Kingfisher */,
+			);
 			productName = SwiiftUITutorials;
 			productReference = CA57A2CD27E4BA26003A87D2 /* SwiiftUITutorials.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +149,9 @@
 				Base,
 			);
 			mainGroup = CA57A2C427E4BA26003A87D2;
+			packageReferences = (
+				CAE9B22727EB511200FE0DAD /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = CA57A2CE27E4BA26003A87D2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA57A2D327E4BA26003A87D2 /* ContentView.swift in Sources */,
+				CA36C25327EA0A21006A3515 /* SomeTestView.swift in Sources */,
+				CA0B231627EB55BB0072E989 /* CircleTextImageView.swift in Sources */,
 				CA57A2D127E4BA26003A87D2 /* SwiiftUITutorialsApp.swift in Sources */,
+				CA0B231927EB5AF10072E989 /* SampleListView.swift in Sources */,
+				CA36C25427EA1170006A3515 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +385,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CAE9B22727EB511200FE0DAD /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CAE9B22827EB511200FE0DAD /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CAE9B22727EB511200FE0DAD /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CA57A2C527E4BA26003A87D2 /* Project object */;
 }
