@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		CA0B231627EB55BB0072E989 /* CircleTextImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0B231527EB55BB0072E989 /* CircleTextImageView.swift */; };
 		CA0B231927EB5AF10072E989 /* SampleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0B231827EB5AF00072E989 /* SampleListView.swift */; };
+		CA1798C727EDE09300962C89 /* NavigationUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1798C627EDE09300962C89 /* NavigationUsers.swift */; };
+		CA1798C927EDE0A500962C89 /* NavigationUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1798C827EDE0A500962C89 /* NavigationUserModel.swift */; };
+		CA1798CC27EDE55200962C89 /* UserViewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1798CB27EDE55200962C89 /* UserViewDetail.swift */; };
 		CA318FB227ECA37000562CAE /* ModelListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA318FB127ECA37000562CAE /* ModelListView.swift */; };
 		CA318FB427ECA39B00562CAE /* TweetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA318FB327ECA39B00562CAE /* TweetModel.swift */; };
 		CA36C25327EA0A21006A3515 /* SomeTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36C25227EA0A21006A3515 /* SomeTestView.swift */; };
@@ -23,6 +26,9 @@
 /* Begin PBXFileReference section */
 		CA0B231527EB55BB0072E989 /* CircleTextImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleTextImageView.swift; sourceTree = "<group>"; };
 		CA0B231827EB5AF00072E989 /* SampleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleListView.swift; sourceTree = "<group>"; };
+		CA1798C627EDE09300962C89 /* NavigationUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUsers.swift; sourceTree = "<group>"; };
+		CA1798C827EDE0A500962C89 /* NavigationUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUserModel.swift; sourceTree = "<group>"; };
+		CA1798CB27EDE55200962C89 /* UserViewDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewDetail.swift; sourceTree = "<group>"; };
 		CA318FB127ECA37000562CAE /* ModelListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelListView.swift; sourceTree = "<group>"; };
 		CA318FB327ECA39B00562CAE /* TweetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetModel.swift; sourceTree = "<group>"; };
 		CA36C25227EA0A21006A3515 /* SomeTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeTestView.swift; sourceTree = "<group>"; };
@@ -49,10 +55,21 @@
 		CA0B231727EB5ADC0072E989 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				CA1798C527EDE07200962C89 /* Navigation */,
 				CA318FB027ECA32F00562CAE /* ModelList */,
 				CA0B231827EB5AF00072E989 /* SampleListView.swift */,
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		CA1798C527EDE07200962C89 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				CA1798C627EDE09300962C89 /* NavigationUsers.swift */,
+				CA1798C827EDE0A500962C89 /* NavigationUserModel.swift */,
+				CA1798CB27EDE55200962C89 /* UserViewDetail.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		CA318FB027ECA32F00562CAE /* ModelList */ = {
@@ -199,9 +216,12 @@
 				CAF16FC127ECAEF000B5D3B4 /* TweetCard.swift in Sources */,
 				CA0B231627EB55BB0072E989 /* CircleTextImageView.swift in Sources */,
 				CA318FB427ECA39B00562CAE /* TweetModel.swift in Sources */,
+				CA1798C927EDE0A500962C89 /* NavigationUserModel.swift in Sources */,
 				CA57A2D127E4BA26003A87D2 /* SwiiftUITutorialsApp.swift in Sources */,
 				CA0B231927EB5AF10072E989 /* SampleListView.swift in Sources */,
+				CA1798C727EDE09300962C89 /* NavigationUsers.swift in Sources */,
 				CA318FB227ECA37000562CAE /* ModelListView.swift in Sources */,
+				CA1798CC27EDE55200962C89 /* UserViewDetail.swift in Sources */,
 				CA36C25427EA1170006A3515 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
