@@ -11,8 +11,10 @@ struct NavigationUsers: View {
     
     @State private var isBottomSheetPresent:Bool = false
     var body: some View {
+        //_printChanges logs  all the changes in the ui
+        Self._printChanges()
         //This view gives makes the views navigatable
-        NavigationView {
+      return NavigationView {
             List(NavigationUserModel.samples, id: \.id){
                 //navigationlink is used to navigate to another page. it takes data and label
                 data in NavigationLink{
@@ -36,7 +38,8 @@ struct NavigationUsers: View {
         }.sheet(isPresented: $isBottomSheetPresent, onDismiss: {
             print("is dismissed")
         }, content: {
-            Button("Close Sheet", action: {
+            Button("Close Sheet ", action: {
+                print("hello canim")
                 isBottomSheetPresent.toggle()
             })
         })

@@ -19,8 +19,13 @@
 		CA57A2D127E4BA26003A87D2 /* SwiiftUITutorialsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA57A2D027E4BA26003A87D2 /* SwiiftUITutorialsApp.swift */; };
 		CA57A2D527E4BA28003A87D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA57A2D427E4BA28003A87D2 /* Assets.xcassets */; };
 		CA57A2D827E4BA28003A87D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA57A2D727E4BA28003A87D2 /* Preview Assets.xcassets */; };
+		CABA263827FB23EE001A1788 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA263727FB23EE001A1788 /* CustomTabView.swift */; };
+		CABA263A27FB3B24001A1788 /* CustomTabIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA263927FB3B24001A1788 /* CustomTabIndex.swift */; };
+		CADFA07227FC7A2B005702C4 /* EnvironmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADFA07127FC7A2B005702C4 /* EnvironmentView.swift */; };
+		CADFA07427FC7AF7005702C4 /* SpacerConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADFA07327FC7AF7005702C4 /* SpacerConstant.swift */; };
 		CAE9B22927EB511200FE0DAD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CAE9B22827EB511200FE0DAD /* Kingfisher */; };
 		CAF16FC127ECAEF000B5D3B4 /* TweetCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF16FC027ECAEEF00B5D3B4 /* TweetCard.swift */; };
+		CAF6CB4E27FC8494009990C8 /* DateControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF6CB4D27FC8494009990C8 /* DateControlView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +42,12 @@
 		CA57A2D227E4BA26003A87D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CA57A2D427E4BA28003A87D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA57A2D727E4BA28003A87D2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CABA263727FB23EE001A1788 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		CABA263927FB3B24001A1788 /* CustomTabIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabIndex.swift; sourceTree = "<group>"; };
+		CADFA07127FC7A2B005702C4 /* EnvironmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentView.swift; sourceTree = "<group>"; };
+		CADFA07327FC7AF7005702C4 /* SpacerConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacerConstant.swift; sourceTree = "<group>"; };
 		CAF16FC027ECAEEF00B5D3B4 /* TweetCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCard.swift; sourceTree = "<group>"; };
+		CAF6CB4D27FC8494009990C8 /* DateControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateControlView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +65,8 @@
 		CA0B231727EB5ADC0072E989 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				CADFA07027FC7A03005702C4 /* Environment */,
+				CABA263627FB23DB001A1788 /* CustomTabView */,
 				CA1798C527EDE07200962C89 /* Navigation */,
 				CA318FB027ECA32F00562CAE /* ModelList */,
 				CA0B231827EB5AF00072E989 /* SampleListView.swift */,
@@ -118,6 +130,25 @@
 				CA57A2D727E4BA28003A87D2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CABA263627FB23DB001A1788 /* CustomTabView */ = {
+			isa = PBXGroup;
+			children = (
+				CABA263727FB23EE001A1788 /* CustomTabView.swift */,
+				CABA263927FB3B24001A1788 /* CustomTabIndex.swift */,
+			);
+			path = CustomTabView;
+			sourceTree = "<group>";
+		};
+		CADFA07027FC7A03005702C4 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				CADFA07127FC7A2B005702C4 /* EnvironmentView.swift */,
+				CADFA07327FC7AF7005702C4 /* SpacerConstant.swift */,
+				CAF6CB4D27FC8494009990C8 /* DateControlView.swift */,
+			);
+			path = Environment;
 			sourceTree = "<group>";
 		};
 		CAE9B22A27EB54D200FE0DAD /* View */ = {
@@ -214,10 +245,15 @@
 			files = (
 				CA36C25327EA0A21006A3515 /* SomeTestView.swift in Sources */,
 				CAF16FC127ECAEF000B5D3B4 /* TweetCard.swift in Sources */,
+				CADFA07227FC7A2B005702C4 /* EnvironmentView.swift in Sources */,
+				CADFA07427FC7AF7005702C4 /* SpacerConstant.swift in Sources */,
 				CA0B231627EB55BB0072E989 /* CircleTextImageView.swift in Sources */,
+				CABA263A27FB3B24001A1788 /* CustomTabIndex.swift in Sources */,
+				CABA263827FB23EE001A1788 /* CustomTabView.swift in Sources */,
 				CA318FB427ECA39B00562CAE /* TweetModel.swift in Sources */,
 				CA1798C927EDE0A500962C89 /* NavigationUserModel.swift in Sources */,
 				CA57A2D127E4BA26003A87D2 /* SwiiftUITutorialsApp.swift in Sources */,
+				CAF6CB4E27FC8494009990C8 /* DateControlView.swift in Sources */,
 				CA0B231927EB5AF10072E989 /* SampleListView.swift in Sources */,
 				CA1798C727EDE09300962C89 /* NavigationUsers.swift in Sources */,
 				CA318FB227ECA37000562CAE /* ModelListView.swift in Sources */,
