@@ -7,6 +7,8 @@ The features learned & practiced:
    * HStack
    * ZStack
    * Rectangle / Circle / Text
+* Preview Usage
+* Add / modify / remove properties from Attributes Inspector
 * State Management
 * Arrays
 * Package / Libraries
