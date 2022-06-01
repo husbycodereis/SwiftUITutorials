@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		CA0B231627EB55BB0072E989 /* CircleTextImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0B231527EB55BB0072E989 /* CircleTextImageView.swift */; };
 		CA0B231927EB5AF10072E989 /* SampleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0B231827EB5AF00072E989 /* SampleListView.swift */; };
+		CA12889228475AF700433B55 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA12889128475AF700433B55 /* User.swift */; };
+		CA12889628475B4E00433B55 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA12889528475B4E00433B55 /* UserService.swift */; };
+		CA12889A28475D7F00433B55 /* Logging+AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA12889928475D7F00433B55 /* Logging+AFError.swift */; };
+		CA12889D28475E3A00433B55 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = CA12889C28475E3A00433B55 /* Logging */; };
+		CA12889F2847601800433B55 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA12889E2847601800433B55 /* UserViewModel.swift */; };
+		CA1288A1284761A100433B55 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1288A0284761A100433B55 /* UserView.swift */; };
 		CA1798C727EDE09300962C89 /* NavigationUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1798C627EDE09300962C89 /* NavigationUsers.swift */; };
 		CA1798C927EDE0A500962C89 /* NavigationUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1798C827EDE0A500962C89 /* NavigationUserModel.swift */; };
 		CA1798CC27EDE55200962C89 /* UserViewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1798CB27EDE55200962C89 /* UserViewDetail.swift */; };
@@ -38,6 +44,11 @@
 /* Begin PBXFileReference section */
 		CA0B231527EB55BB0072E989 /* CircleTextImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleTextImageView.swift; sourceTree = "<group>"; };
 		CA0B231827EB5AF00072E989 /* SampleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleListView.swift; sourceTree = "<group>"; };
+		CA12889128475AF700433B55 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CA12889528475B4E00433B55 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		CA12889928475D7F00433B55 /* Logging+AFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logging+AFError.swift"; sourceTree = "<group>"; };
+		CA12889E2847601800433B55 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		CA1288A0284761A100433B55 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		CA1798C627EDE09300962C89 /* NavigationUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUsers.swift; sourceTree = "<group>"; };
 		CA1798C827EDE0A500962C89 /* NavigationUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUserModel.swift; sourceTree = "<group>"; };
 		CA1798CB27EDE55200962C89 /* UserViewDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewDetail.swift; sourceTree = "<group>"; };
@@ -69,6 +80,7 @@
 			files = (
 				CAE9B22927EB511200FE0DAD /* Kingfisher in Frameworks */,
 				CAB329AE283B71A700A1C1B9 /* ActivityIndicatorView in Frameworks */,
+				CA12889D28475E3A00433B55 /* Logging in Frameworks */,
 				CAB329A9283B6AF500A1C1B9 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +91,7 @@
 		CA0B231727EB5ADC0072E989 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				CA12888D2847592700433B55 /* ReqresViewModel */,
 				CAB3299C283B666500A1C1B9 /* FoxViewModel */,
 				CADFA07027FC7A03005702C4 /* Environment */,
 				CABA263627FB23DB001A1788 /* CustomTabView */,
@@ -87,6 +100,65 @@
 				CA0B231827EB5AF00072E989 /* SampleListView.swift */,
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		CA12888D2847592700433B55 /* ReqresViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CA12889328475B3A00433B55 /* Service */,
+				CA12889028475AEA00433B55 /* View */,
+				CA12888F28475AE500433B55 /* Model */,
+				CA12888E2847594E00433B55 /* ViewModel */,
+			);
+			path = ReqresViewModel;
+			sourceTree = "<group>";
+		};
+		CA12888E2847594E00433B55 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CA12889E2847601800433B55 /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CA12888F28475AE500433B55 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA12889128475AF700433B55 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA12889028475AEA00433B55 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA1288A0284761A100433B55 /* UserView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA12889328475B3A00433B55 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CA12889528475B4E00433B55 /* UserService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CA12889728475D5D00433B55 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CA12889828475D6300433B55 /* Extension */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CA12889828475D6300433B55 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CA12889928475D7F00433B55 /* Logging+AFError.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		CA1798C527EDE07200962C89 /* Navigation */ = {
@@ -136,6 +208,7 @@
 		CA57A2CF27E4BA26003A87D2 /* SwiiftUITutorials */ = {
 			isa = PBXGroup;
 			children = (
+				CA12889728475D5D00433B55 /* Core */,
 				CA0B231727EB5ADC0072E989 /* Features */,
 				CAE9B22A27EB54D200FE0DAD /* View */,
 				CA57A2D027E4BA26003A87D2 /* SwiiftUITutorialsApp.swift */,
@@ -254,6 +327,7 @@
 				CAE9B22827EB511200FE0DAD /* Kingfisher */,
 				CAB329A8283B6AF500A1C1B9 /* Alamofire */,
 				CAB329AD283B71A700A1C1B9 /* ActivityIndicatorView */,
+				CA12889C28475E3A00433B55 /* Logging */,
 			);
 			productName = SwiiftUITutorials;
 			productReference = CA57A2CD27E4BA26003A87D2 /* SwiiftUITutorials.app */;
@@ -287,6 +361,7 @@
 				CAE9B22727EB511200FE0DAD /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				CAB329A7283B6AF500A1C1B9 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				CAB329AC283B71A700A1C1B9 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */,
+				CA12889B28475E3A00433B55 /* XCRemoteSwiftPackageReference "swift-log" */,
 			);
 			productRefGroup = CA57A2CE27E4BA26003A87D2 /* Products */;
 			projectDirPath = "";
@@ -317,13 +392,16 @@
 				CA36C25327EA0A21006A3515 /* SomeTestView.swift in Sources */,
 				CAB329A4283B69CB00A1C1B9 /* FoxModel.swift in Sources */,
 				CAB329AB283B6EAA00A1C1B9 /* FoxViewModel.swift in Sources */,
+				CA12889A28475D7F00433B55 /* Logging+AFError.swift in Sources */,
 				CAF16FC127ECAEF000B5D3B4 /* TweetCard.swift in Sources */,
 				CADFA07227FC7A2B005702C4 /* EnvironmentView.swift in Sources */,
 				CADFA07427FC7AF7005702C4 /* SpacerConstant.swift in Sources */,
 				CA0B231627EB55BB0072E989 /* CircleTextImageView.swift in Sources */,
+				CA12889628475B4E00433B55 /* UserService.swift in Sources */,
 				CABA263A27FB3B24001A1788 /* CustomTabIndex.swift in Sources */,
 				CAB329A2283B66F200A1C1B9 /* RandomFoxView.swift in Sources */,
 				CABA263827FB23EE001A1788 /* CustomTabView.swift in Sources */,
+				CA12889228475AF700433B55 /* User.swift in Sources */,
 				CAB329A6283B6A4400A1C1B9 /* FoxService.swift in Sources */,
 				CA318FB427ECA39B00562CAE /* TweetModel.swift in Sources */,
 				CA1798C927EDE0A500962C89 /* NavigationUserModel.swift in Sources */,
@@ -334,6 +412,8 @@
 				CA2C2466283B79F40023D19A /* RandomFoxViewComponents.swift in Sources */,
 				CA318FB227ECA37000562CAE /* ModelListView.swift in Sources */,
 				CA1798CC27EDE55200962C89 /* UserViewDetail.swift in Sources */,
+				CA1288A1284761A100433B55 /* UserView.swift in Sources */,
+				CA12889F2847601800433B55 /* UserViewModel.swift in Sources */,
 				CA36C25427EA1170006A3515 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -539,6 +619,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CA12889B28475E3A00433B55 /* XCRemoteSwiftPackageReference "swift-log" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-log.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		CAB329A7283B6AF500A1C1B9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -566,6 +654,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CA12889C28475E3A00433B55 /* Logging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA12889B28475E3A00433B55 /* XCRemoteSwiftPackageReference "swift-log" */;
+			productName = Logging;
+		};
 		CAB329A8283B6AF500A1C1B9 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CAB329A7283B6AF500A1C1B9 /* XCRemoteSwiftPackageReference "Alamofire" */;
