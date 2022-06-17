@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA09358B285C96B8007044E3 /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA09358A285C96B8007044E3 /* MarketView.swift */; };
+		CA09358F285C96FE007044E3 /* MarketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA09358E285C96FE007044E3 /* MarketModel.swift */; };
+		CA093591285C9847007044E3 /* MarketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA093590285C9847007044E3 /* MarketViewModel.swift */; };
+		CA093593285C9D39007044E3 /* MarketDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA093592285C9D39007044E3 /* MarketDetailView.swift */; };
+		CA093595285C9D53007044E3 /* MarketDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA093594285C9D53007044E3 /* MarketDetailViewModel.swift */; };
 		CA0B231627EB55BB0072E989 /* CircleTextImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0B231527EB55BB0072E989 /* CircleTextImageView.swift */; };
 		CA0B231927EB5AF10072E989 /* SampleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0B231827EB5AF00072E989 /* SampleListView.swift */; };
 		CA12889228475AF700433B55 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA12889128475AF700433B55 /* User.swift */; };
@@ -42,6 +47,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA09358A285C96B8007044E3 /* MarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketView.swift; sourceTree = "<group>"; };
+		CA09358E285C96FE007044E3 /* MarketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketModel.swift; sourceTree = "<group>"; };
+		CA093590285C9847007044E3 /* MarketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewModel.swift; sourceTree = "<group>"; };
+		CA093592285C9D39007044E3 /* MarketDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDetailView.swift; sourceTree = "<group>"; };
+		CA093594285C9D53007044E3 /* MarketDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDetailViewModel.swift; sourceTree = "<group>"; };
 		CA0B231527EB55BB0072E989 /* CircleTextImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleTextImageView.swift; sourceTree = "<group>"; };
 		CA0B231827EB5AF00072E989 /* SampleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleListView.swift; sourceTree = "<group>"; };
 		CA12889128475AF700433B55 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -88,9 +98,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA093587285C9674007044E3 /* Market */ = {
+			isa = PBXGroup;
+			children = (
+				CA093589285C9699007044E3 /* HomeDetails */,
+				CA093588285C968D007044E3 /* Home */,
+			);
+			path = Market;
+			sourceTree = "<group>";
+		};
+		CA093588285C968D007044E3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CA09358E285C96FE007044E3 /* MarketModel.swift */,
+				CA093590285C9847007044E3 /* MarketViewModel.swift */,
+				CA09358A285C96B8007044E3 /* MarketView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CA093589285C9699007044E3 /* HomeDetails */ = {
+			isa = PBXGroup;
+			children = (
+				CA093592285C9D39007044E3 /* MarketDetailView.swift */,
+				CA093594285C9D53007044E3 /* MarketDetailViewModel.swift */,
+			);
+			path = HomeDetails;
+			sourceTree = "<group>";
+		};
 		CA0B231727EB5ADC0072E989 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				CA093587285C9674007044E3 /* Market */,
 				CA12888D2847592700433B55 /* ReqresViewModel */,
 				CAB3299C283B666500A1C1B9 /* FoxViewModel */,
 				CADFA07027FC7A03005702C4 /* Environment */,
@@ -389,11 +428,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA093593285C9D39007044E3 /* MarketDetailView.swift in Sources */,
 				CA36C25327EA0A21006A3515 /* SomeTestView.swift in Sources */,
 				CAB329A4283B69CB00A1C1B9 /* FoxModel.swift in Sources */,
 				CAB329AB283B6EAA00A1C1B9 /* FoxViewModel.swift in Sources */,
 				CA12889A28475D7F00433B55 /* Logging+AFError.swift in Sources */,
 				CAF16FC127ECAEF000B5D3B4 /* TweetCard.swift in Sources */,
+				CA09358F285C96FE007044E3 /* MarketModel.swift in Sources */,
 				CADFA07227FC7A2B005702C4 /* EnvironmentView.swift in Sources */,
 				CADFA07427FC7AF7005702C4 /* SpacerConstant.swift in Sources */,
 				CA0B231627EB55BB0072E989 /* CircleTextImageView.swift in Sources */,
@@ -409,11 +450,14 @@
 				CAF6CB4E27FC8494009990C8 /* DateControlView.swift in Sources */,
 				CA0B231927EB5AF10072E989 /* SampleListView.swift in Sources */,
 				CA1798C727EDE09300962C89 /* NavigationUsers.swift in Sources */,
+				CA093591285C9847007044E3 /* MarketViewModel.swift in Sources */,
 				CA2C2466283B79F40023D19A /* RandomFoxViewComponents.swift in Sources */,
 				CA318FB227ECA37000562CAE /* ModelListView.swift in Sources */,
 				CA1798CC27EDE55200962C89 /* UserViewDetail.swift in Sources */,
 				CA1288A1284761A100433B55 /* UserView.swift in Sources */,
+				CA09358B285C96B8007044E3 /* MarketView.swift in Sources */,
 				CA12889F2847601800433B55 /* UserViewModel.swift in Sources */,
+				CA093595285C9D53007044E3 /* MarketDetailViewModel.swift in Sources */,
 				CA36C25427EA1170006A3515 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
