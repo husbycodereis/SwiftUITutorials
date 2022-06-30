@@ -43,6 +43,10 @@
 		CADFA07427FC7AF7005702C4 /* SpacerConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADFA07327FC7AF7005702C4 /* SpacerConstant.swift */; };
 		CAE9B22927EB511200FE0DAD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CAE9B22827EB511200FE0DAD /* Kingfisher */; };
 		CAF16FC127ECAEF000B5D3B4 /* TweetCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF16FC027ECAEEF00B5D3B4 /* TweetCard.swift */; };
+		CAF3FFB1286DA20500E9FF3C /* PropertyWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF3FFB0286DA20500E9FF3C /* PropertyWrapperView.swift */; };
+		CAF3FFB3286DA23900E9FF3C /* UserWrapperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF3FFB2286DA23900E9FF3C /* UserWrapperModel.swift */; };
+		CAF3FFB5286DA28300E9FF3C /* UpperCaseWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF3FFB4286DA28300E9FF3C /* UpperCaseWrapper.swift */; };
+		CAF3FFB7286DA57F00E9FF3C /* NumberCaseWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF3FFB6286DA57F00E9FF3C /* NumberCaseWrapper.swift */; };
 		CAF6CB4E27FC8494009990C8 /* DateControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF6CB4D27FC8494009990C8 /* DateControlView.swift */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +84,10 @@
 		CADFA07127FC7A2B005702C4 /* EnvironmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentView.swift; sourceTree = "<group>"; };
 		CADFA07327FC7AF7005702C4 /* SpacerConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacerConstant.swift; sourceTree = "<group>"; };
 		CAF16FC027ECAEEF00B5D3B4 /* TweetCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCard.swift; sourceTree = "<group>"; };
+		CAF3FFB0286DA20500E9FF3C /* PropertyWrapperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrapperView.swift; sourceTree = "<group>"; };
+		CAF3FFB2286DA23900E9FF3C /* UserWrapperModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWrapperModel.swift; sourceTree = "<group>"; };
+		CAF3FFB4286DA28300E9FF3C /* UpperCaseWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpperCaseWrapper.swift; sourceTree = "<group>"; };
+		CAF3FFB6286DA57F00E9FF3C /* NumberCaseWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCaseWrapper.swift; sourceTree = "<group>"; };
 		CAF6CB4D27FC8494009990C8 /* DateControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateControlView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +137,7 @@
 		CA0B231727EB5ADC0072E989 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				CAF3FFAF286DA1F200E9FF3C /* PropertyWrapper */,
 				CA093587285C9674007044E3 /* Market */,
 				CA12888D2847592700433B55 /* ReqresViewModel */,
 				CAB3299C283B666500A1C1B9 /* FoxViewModel */,
@@ -346,6 +355,17 @@
 			path = Circle;
 			sourceTree = "<group>";
 		};
+		CAF3FFAF286DA1F200E9FF3C /* PropertyWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				CAF3FFB0286DA20500E9FF3C /* PropertyWrapperView.swift */,
+				CAF3FFB2286DA23900E9FF3C /* UserWrapperModel.swift */,
+				CAF3FFB4286DA28300E9FF3C /* UpperCaseWrapper.swift */,
+				CAF3FFB6286DA57F00E9FF3C /* NumberCaseWrapper.swift */,
+			);
+			path = PropertyWrapper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -437,6 +457,7 @@
 				CA09358F285C96FE007044E3 /* MarketModel.swift in Sources */,
 				CADFA07227FC7A2B005702C4 /* EnvironmentView.swift in Sources */,
 				CADFA07427FC7AF7005702C4 /* SpacerConstant.swift in Sources */,
+				CAF3FFB7286DA57F00E9FF3C /* NumberCaseWrapper.swift in Sources */,
 				CA0B231627EB55BB0072E989 /* CircleTextImageView.swift in Sources */,
 				CA12889628475B4E00433B55 /* UserService.swift in Sources */,
 				CABA263A27FB3B24001A1788 /* CustomTabIndex.swift in Sources */,
@@ -449,9 +470,12 @@
 				CA57A2D127E4BA26003A87D2 /* SwiiftUITutorialsApp.swift in Sources */,
 				CAF6CB4E27FC8494009990C8 /* DateControlView.swift in Sources */,
 				CA0B231927EB5AF10072E989 /* SampleListView.swift in Sources */,
+				CAF3FFB1286DA20500E9FF3C /* PropertyWrapperView.swift in Sources */,
 				CA1798C727EDE09300962C89 /* NavigationUsers.swift in Sources */,
 				CA093591285C9847007044E3 /* MarketViewModel.swift in Sources */,
 				CA2C2466283B79F40023D19A /* RandomFoxViewComponents.swift in Sources */,
+				CAF3FFB3286DA23900E9FF3C /* UserWrapperModel.swift in Sources */,
+				CAF3FFB5286DA28300E9FF3C /* UpperCaseWrapper.swift in Sources */,
 				CA318FB227ECA37000562CAE /* ModelListView.swift in Sources */,
 				CA1798CC27EDE55200962C89 /* UserViewDetail.swift in Sources */,
 				CA1288A1284761A100433B55 /* UserView.swift in Sources */,
