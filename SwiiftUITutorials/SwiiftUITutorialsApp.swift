@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiiftUITutorialsApp: App {
     var body: some Scene {
         WindowGroup {
-            TimerView()
+            ContentView().environment(\.locale, .init(identifier: "tr"))
         }
     }
 }

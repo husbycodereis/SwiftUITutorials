@@ -19,7 +19,7 @@ struct ContentView: View {
 fileprivate func groupView() -> some View {
     return  Group {
         VStack {
-            Text("Hello canim")
+            Text("welcome")
                 .opacity(/*@START_MENU_TOKEN@*/0.8/*@END_MENU_TOKEN@*/)
             Image(systemName: "moon.fill").resizable().frame(width: 100, height: 100).foregroundColor(Color.red)
         }.frame(width: 200, height: 200, alignment: .center).background(Color("color_random"))
