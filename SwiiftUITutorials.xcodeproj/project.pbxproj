@@ -28,6 +28,7 @@
 		CA318FB427ECA39B00562CAE /* TweetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA318FB327ECA39B00562CAE /* TweetModel.swift */; };
 		CA36C25327EA0A21006A3515 /* SomeTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36C25227EA0A21006A3515 /* SomeTestView.swift */; };
 		CA36C25427EA1170006A3515 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA57A2D227E4BA26003A87D2 /* ContentView.swift */; };
+		CA497CE2289BF28F00743915 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA497CE1289BF28F00743915 /* TimerView.swift */; };
 		CA57A2D127E4BA26003A87D2 /* SwiiftUITutorialsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA57A2D027E4BA26003A87D2 /* SwiiftUITutorialsApp.swift */; };
 		CA57A2D527E4BA28003A87D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA57A2D427E4BA28003A87D2 /* Assets.xcassets */; };
 		CA57A2D827E4BA28003A87D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA57A2D727E4BA28003A87D2 /* Preview Assets.xcassets */; };
@@ -70,6 +71,7 @@
 		CA318FB127ECA37000562CAE /* ModelListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelListView.swift; sourceTree = "<group>"; };
 		CA318FB327ECA39B00562CAE /* TweetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetModel.swift; sourceTree = "<group>"; };
 		CA36C25227EA0A21006A3515 /* SomeTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeTestView.swift; sourceTree = "<group>"; };
+		CA497CE1289BF28F00743915 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		CA57A2CD27E4BA26003A87D2 /* SwiiftUITutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiiftUITutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA57A2D027E4BA26003A87D2 /* SwiiftUITutorialsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiiftUITutorialsApp.swift; sourceTree = "<group>"; };
 		CA57A2D227E4BA26003A87D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -343,6 +345,7 @@
 			isa = PBXGroup;
 			children = (
 				CAE9B22B27EB54DE00FE0DAD /* Circle */,
+				CA497CE1289BF28F00743915 /* TimerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 				CA12889228475AF700433B55 /* User.swift in Sources */,
 				CAB329A6283B6A4400A1C1B9 /* FoxService.swift in Sources */,
 				CA318FB427ECA39B00562CAE /* TweetModel.swift in Sources */,
+				CA497CE2289BF28F00743915 /* TimerView.swift in Sources */,
 				CA1798C927EDE0A500962C89 /* NavigationUserModel.swift in Sources */,
 				CA57A2D127E4BA26003A87D2 /* SwiiftUITutorialsApp.swift in Sources */,
 				CAF6CB4E27FC8494009990C8 /* DateControlView.swift in Sources */,
